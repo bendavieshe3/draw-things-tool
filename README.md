@@ -135,8 +135,31 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 
 ## TODO
 
+### Documentation
 - [ ] Specify Node.js and npm versions in the prerequisites.
 - [ ] Add more detailed usage examples.
 - [ ] Describe how to run tests if any.
 - [ ] Specify the license in the License section.
 - [ ] Add any other missing information.  
+
+### Code - Functional
+- [ ] Remove file saved noisy output from generation
+- [ ] Remove prompt from static config at top of generation
+- [ ] Add format and support for sampling {|placeholder_2}
+- [ ] Add format and support for adhoc placeholder {value1+value2+}
+- [ ] Add format and support for adhoc placeholder sampling {value1|value2}
+- [ ] Add support for separate project folders
+- [ ] Make better filenames
+- [ ] Support multi-prompting
+- [ ] Add more placeholders
+
+
+- [ ] Specify the license in the License section.
+- [ ] Add any other missing information.  
+
+### Code - Tech Debt
+- [ ] Remove unused preview case statement  
+- [ ] Investigate adding tests
+- [ ] Check method signatures for simplification
+- [ ] Ask chatgpt for refactor  
+
