@@ -2,6 +2,7 @@ const { Command } = require('commander');
 const program = new Command();
 const generate = require('./lib/commands/generate');
 const configCommand = require('./lib/commands/config');
+const configManager = require('./lib/configManager');
 
 program
   .name('DrawThingsTools')
@@ -15,8 +16,9 @@ program
   .option('-p, --preview', 'Preview the parameters without generating images')
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
-  .action((options) => {
-    generate.generateImages(options.limit, options.preview, options.project, options.prompt)
+  .action(async (options) => {
+    const activeConfig = await configManager.getActiveConfiguration(options);
+    generate.generateImages(activeConfig)
       .then(() => console.log("All image generations are completed."))
       .catch(error => console.error("Error in generating images:", error));
   });
@@ -26,8 +28,9 @@ program
   .description('Display the current active configuration')
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
-  .action((options) => {
-    configCommand.displayConfig(options)
+  .action(async (options) => {
+    const activeConfig = await configManager.getActiveConfiguration(options);
+    configCommand.displayConfig(activeConfig)
       .catch(error => console.error("Error displaying configuration:", error));
   });
 
