@@ -25,3 +25,6 @@ package-lock.json
 
 # Optional: Ignore Visual Studio Code settings
 .vscode/
+
+# Local documentation
+*local.md
