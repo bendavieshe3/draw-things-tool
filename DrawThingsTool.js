@@ -1,7 +1,6 @@
-// DrawThingsTools.js
 const { Command } = require('commander');
 const program = new Command();
-const generate = require('./commands/generate');
+const generate = require('./lib/commands/generate');
 
 program
   .name('DrawThingsTools')
