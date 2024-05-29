@@ -2,9 +2,11 @@
 
 const { Command } = require('commander');
 const program = new Command();
+const path = require('path');
 const generate = require('./lib/commands/generate');
 const configCommand = require('./lib/commands/config');
 const configManager = require('./lib/configManager');
+const utils = require('./lib/utils'); // Import the new utility functions
 const pkg = require('./package.json');
 
 program
@@ -21,6 +23,10 @@ const showVersionIfVerbose = () => {
   }
 };
 
+const printCommandInfo = (name, description) => {
+  console.log(`${name}: ${description}`);
+};
+
 program
   .command('generate')
   .description('Generate images based on the provided configuration')
@@ -29,6 +35,7 @@ program
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
   .action(async (options) => {
+    printCommandInfo('Generate', 'generate images based on configuration');
     const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
     generate.generateImages(activeConfig)
       .then(() => console.log("All image generations are completed."))
@@ -41,6 +48,7 @@ program
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
   .action(async (options) => {
+    printCommandInfo('Config', 'display the current active configuration');
     const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
     configCommand.displayConfig(activeConfig)
       .catch(error => console.error("Error displaying configuration:", error));

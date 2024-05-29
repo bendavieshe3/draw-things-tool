@@ -39,5 +39,22 @@ module.exports = {
         "Anderson", "Thomas", "Jackson", "White", "Harris",
         "Martin", "Thompson", "Garcia", "Martinez", "Robinson",
         "Clark", "Lewis", "Lee", "Walker", "Hall"
+    ],
+
+    // ethnicities or races
+    ethnicity: [
+        "Australian", "British", "English", "Scottish", "US American", 
+        "Canadian", "Irish", "Welsh", 
+        "Chinese", "Japanese", "Korean", "Vietnamese"
+    ],
+
+    // moods - might be applied to images as a whole
+    moods: [
+        "sombre", "serene", "rebellious", "grim"
+    ],
+
+    // themes
+    themes: [
+        "freedom", "responsibility", "diversity", "oppression"
     ]
 };
