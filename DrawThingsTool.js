@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+// DrawThingsTool.js
 
 const { Command } = require('commander');
 const program = new Command();
@@ -50,8 +50,12 @@ program
   .action(async (options) => {
     printCommandInfo('Config', 'display the current active configuration');
     const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
-    configCommand.displayConfig(activeConfig)
-      .catch(error => console.error("Error displaying configuration:", error));
+    try {
+      const configString = utils.prettyPrint(activeConfig, 'Active Configuration');
+      console.log(configString);
+    } catch (error) {
+      console.error("Error displaying configuration:", error);
+    }
   });
 
 program.parse(process.argv);
