@@ -1,13 +1,25 @@
+#!/usr/bin/env node
+
 const { Command } = require('commander');
 const program = new Command();
 const generate = require('./lib/commands/generate');
 const configCommand = require('./lib/commands/config');
 const configManager = require('./lib/configManager');
+const pkg = require('./package.json');
 
 program
   .name('DrawThingsTools')
   .description('CLI tool for generating images with Draw Things')
-  .version('1.0.0');
+  .version(pkg.version);
+
+program
+  .option('-v, --verbose', 'Enable verbose mode');
+
+const showVersionIfVerbose = () => {
+  if (program.opts().verbose) {
+    console.log(`${program.name()} version ${program.version()}`);
+  }
+};
 
 program
   .command('generate')
@@ -17,7 +29,7 @@ program
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
   .action(async (options) => {
-    const activeConfig = await configManager.getActiveConfiguration(options);
+    const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
     generate.generateImages(activeConfig)
       .then(() => console.log("All image generations are completed."))
       .catch(error => console.error("Error in generating images:", error));
@@ -29,9 +41,11 @@ program
   .option('-j, --project <path>', 'Path to the project configuration file')
   .option('-r, --prompt <string>', 'Override base prompt')
   .action(async (options) => {
-    const activeConfig = await configManager.getActiveConfiguration(options);
+    const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
     configCommand.displayConfig(activeConfig)
       .catch(error => console.error("Error displaying configuration:", error));
   });
 
 program.parse(process.argv);
+
+showVersionIfVerbose();

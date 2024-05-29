@@ -152,12 +152,16 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [ ] Make better filenames
 - [ ] Support multi-prompting
 - [ ] Add more placeholders
+- [ ] Add Generation Summary
+- [ ] Add Option to delete images in project, or after generation
+- [ ] Add Option to remove or read EXIF information
 
 
-- [ ] Specify the license in the License section.
-- [ ] Add any other missing information.  
 
 ### Code - Tech Debt
+- [ ] Why does config command not show Base Prompt?
+- [ ] Add verbose mode that enables better understanding of the code
+- [ ] Rename, reorganise static_configuration and dynamic_configuration
 - [ ] Remove unused preview case statement  
 - [ ] Investigate adding tests
 - [ ] Check method signatures for simplification
