@@ -32,9 +32,9 @@ module.exports = {
 
     bodytype: ["skinny", "fat", "portly", "flat-chested", "athletic", 
         "medium-build"
-
-
     ],
+
+    art_style: ["photo", "sketch art"].
 
     // eye color
     eye_color: [

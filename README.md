@@ -143,13 +143,14 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [ ] Add any other missing information.  
 
 ### Code - Functional
-- [ ] Remove file saved noisy output from generation
+- [x] Remove file saved noisy output from generation
 - [ ] Remove prompt from static config at top of generation
 - [ ] Add format and support for sampling {|placeholder_2}
-- [ ] Add format and support for adhoc placeholder {value1+value2+}
-- [ ] Add format and support for adhoc placeholder sampling {value1|value2}
+- [x] Add format and support for adhoc placeholder {value1+value2+}
+- [x] Add format and support for adhoc placeholder sampling {value1|value2}
 - [ ] Add support for separate project folders
-- [ ] Make better filenames
+- [x] Make better filenames
+- [ ] Make betterer filenames
 - [ ] Support multi-prompting
 - [ ] Add more placeholders
 - [ ] Add Generation Summary
