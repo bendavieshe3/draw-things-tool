@@ -34,6 +34,9 @@ module.exports = {
         "medium-build"
     ],
 
+    hair_style_simple: ["short", "long", "fancy", "medium-length"     
+    ],
+
     art_style: ["photo", "sketch art"],
 
     // eye color
@@ -120,14 +123,14 @@ module.exports = {
     ],
 
     // moods - might be applied to images as a whole
-    moods: [
+    mood: [
         "sombre", "serene", "rebellious", "grim",
         "joyful", "melancholic", "tense", "calm",
         "euphoric", "pensive", "nostalgic", "hopeful"
     ],
 
     // themes
-    themes: [
+    theme: [
         "freedom", "responsibility", "diversity", "oppression",
         "love", "war", "peace", "conflict",
         "nature", "technology", "tradition", "innovation"
