@@ -7,8 +7,7 @@ module.exports = {
         outputDir: 'generated_images'
     },
     defaultProject: {
-        basePrompt: "A portrait of a {height} person showing {emotion}",
-        steps: 21,
-        guidance_scale: 3,
+        projectName: "Default",
+        basePrompt: "A {ethnicity} person sad the default prompt has not been changed",
     }
 };

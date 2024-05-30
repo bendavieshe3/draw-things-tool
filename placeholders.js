@@ -34,7 +34,7 @@ module.exports = {
         "medium-build"
     ],
 
-    art_style: ["photo", "sketch art"].
+    art_style: ["photo", "sketch art"],
 
     // eye color
     eye_color: [
