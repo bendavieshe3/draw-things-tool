@@ -44,11 +44,11 @@ module.exports = {
     // ethnicities or races
     ethnicity: [
         "Australian", "British", "English", "Scottish", "US American", 
-        // "Canadian", "Irish", "Welsh", 
-        // "Chinese", "Japanese", "Korean", "Vietnamese",
-        // "Indian", "Pakistani", "Bangladeshi", "Sri Lankan",
-        // "German", "French", "Italian", "Spanish",
-        // "Mexican", "Brazilian", "Argentinian", "Chilean"
+        "Canadian", "Irish", "Welsh", 
+        "Chinese", "Japanese", "Korean", "Vietnamese",
+        "Indian", "Pakistani", "Bangladeshi", "Sri Lankan",
+        "German", "French", "Italian", "Spanish",
+        "Mexican", "Brazilian", "Argentinian", "Chilean"
     ],
 
     // moods - might be applied to images as a whole
