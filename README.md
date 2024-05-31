@@ -148,23 +148,30 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [ ] Add format and support for sampling {|placeholder_2}
 - [x] Add format and support for adhoc placeholder {value1+value2+}
 - [x] Add format and support for adhoc placeholder sampling {value1|value2}
-- [ ] Add support for separate project folders
+- [ ] Make output relative to project folder. Ensure overridden output folder works
 - [x] Make better filenames
 - [ ] Make betterer filenames
+- [ ] Make Hires setting work (cause generations and appear in filename)
+- [ ] Add relevant values to generations output
 - [ ] Support multi-prompting
 - [ ] Add more placeholders
 - [ ] Add Generation Summary
 - [ ] Add Option to delete images in project, or after generation
 - [ ] Add Option to remove or read EXIF information
+- [ ] Tune generation output to include relevant output and possibly not the whole prompt
+- [ ] Add debug mode and transition some outputs of verbose to use that
+- [ ] Switch outputs away from console.log for more control
+
 
 
 
 ### Code - Tech Debt
-- [ ] Why does config command not show Base Prompt?
-- [ ] Add verbose mode that enables better understanding of the code
-- [ ] Rename, reorganise static_configuration and dynamic_configuration
+- [ ] Push to github 
+- [x] Why does config command not show Base Prompt?
+- [x] Add verbose mode that enables better understanding of the code
+- [x] Rename, reorganise static_configuration and dynamic_configuration
 - [ ] Remove unused preview case statement  
 - [ ] Investigate adding tests
-- [ ] Check method signatures for simplification
+- [x] Check method signatures for simplification
 - [ ] Ask chatgpt for refactor  
 

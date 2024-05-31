@@ -50,12 +50,7 @@ program
   .action(async (options) => {
     printCommandInfo('Config', 'display the current active configuration');
     const activeConfig = await configManager.getActiveConfiguration({ ...options, verbose: program.opts().verbose });
-    try {
-      const configString = utils.prettyPrint(activeConfig, 'Active Configuration');
-      console.log(configString);
-    } catch (error) {
-      console.error("Error displaying configuration:", error);
-    }
+      configCommand.displayConfig(activeConfig, ['placeholders']);
   });
 
 program.parse(process.argv);

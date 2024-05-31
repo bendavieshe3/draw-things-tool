@@ -1,9 +1,10 @@
 module.exports = {
     projectName: "SampleProject",
-    prompt: "A {ethnicity} person happy that the default prompt has been changed",
-    negative_prompt: "AC_Neg1",
-    // steps: [20,30],
-    // guidance_scale: 4,
-    // seed: -1
+    prompt: "Amazing photo of {fashion_model:10}",
+    negative_prompt: ["AC Neg1",""],
+    steps: 30,
+    guidance_scale: 3,
+    seed: 1000,
+    hires_fix: [true, false]
     
 };
