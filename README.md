@@ -123,7 +123,7 @@ Project Root Folder
 
 ### Running Tests
 
-I use eslint to find issues in my javascript.
+I use [ESLint](https://eslint.org) to find issues in my javascript.
 
 To install:
 
