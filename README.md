@@ -1,6 +1,12 @@
 # DrawThingsTools
 
-DrawThingsTools is a command-line interface (CLI) tool for generating images using the Draw Things API. It allows users to configure and generate images based on various prompts and configurations.
+*DrawThingsTools* is a command-line interface (CLI) tool for generating images using the Draw Things API. It allows users to configure and generate images based on various prompts and configurations.
+
+The **use case** the tool seeks to satisfy is the exploration and mining of prompt and configuration combinations to:
+- *Create knowledge* around the effects of prompt design and generation settings
+- *Enable experimentation* at enhanced scale to find individual unique and valuable art outcomes. 
+
+A special thanks goes to the [Drawing Things](https://drawthings.ai) team. If you have a Mac or IOS device, try it out, and [join the welcoming community](https://discord.gg/5gcBeGU58f) on Discord. 
 
 ## Table of Contents
 
@@ -25,15 +31,17 @@ DrawThingsTools is a command-line interface (CLI) tool for generating images usi
 ### Steps
 
 1. Clone the repository:
-   ```sh
-  git clone https://github.com/username/DrawThingsTools.git
-  cd DrawThingsTools
-   ```
+
+ ```sh
+git clone https://github.com/username/DrawThingsTools.git
+cd DrawThingsTools
+ ```
 
 2. Install dependencies:
-   ```sh
-  npm install
-   ```
+
+ ```sh
+npm install
+ ```
 
 ## Usage
 
@@ -177,8 +185,7 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [ ] Tune generation output to include relevant output and possibly not the whole prompt
 - [ ] Add debug mode and transition some outputs of verbose to use that
 - [ ] Switch outputs away from console.log for more control
-
-
+- [ ] Shuffle Clause Feature
 
 
 ### Code - Tech Debt
@@ -191,3 +198,6 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [x] Check method signatures for simplification
 - [ ] Ask chatgpt for refactor  
 
+## Credits and Acknowledgements
+
+TODO
