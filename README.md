@@ -2,11 +2,13 @@
 
 *DrawThingsTools* is a command-line interface (CLI) tool for generating images using the Draw Things API. It allows users to configure and generate images based on various prompts and configurations.
 
+[Draw Things](https://drawthings.ai) is an amazing, easy and free AI art generation tool allowing lay people like myself to explore art generation, previously excluded by our lack of talent :). 
+
 The **use case** the tool seeks to satisfy is the exploration and mining of prompt and configuration combinations to:
 - *Create knowledge* around the effects of prompt design and generation settings
 - *Enable experimentation* at enhanced scale to find individual unique and valuable art outcomes. 
 
-A special thanks goes to the [Drawing Things](https://drawthings.ai) team. If you have a Mac or IOS device, try it out, and [join the welcoming community](https://discord.gg/5gcBeGU58f) on Discord. 
+A special thanks goes to the [Draw Things](https://drawthings.ai) team. If you have a Mac or IOS device, try it out, and [join the welcoming community](https://discord.gg/5gcBeGU58f) on Discord. 
 
 ## Table of Contents
 
@@ -25,8 +27,8 @@ A special thanks goes to the [Drawing Things](https://drawthings.ai) team. If yo
 
 ### Prerequisites
 
-- Node.js (version TODO: specify version)
-- npm (version TODO: specify version)
+- Node.js (Developed on v22.2.0+)
+- npm (Developed on v10.7.0+)
 
 ### Steps
 
@@ -160,11 +162,13 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 ## TODO
 
 ### Documentation
-- [ ] Specify Node.js and npm versions in the prerequisites.
+- [x] Specify Node.js and npm versions in the prerequisites.
 - [ ] Add more detailed usage examples.
-- [ ] Describe how to run tests if any.
+- [ ] Describe how to run tests (once added).
 - [ ] Specify the license in the License section.
 - [ ] Add any other missing information.  
+- [ ] Complete Acknowledgements - focus on inspirational scripts
+- [ ] Writing contributing document (depends on various other implementations)
 
 ### Code - Functional
 - [x] Remove file saved noisy output from generation
@@ -174,11 +178,11 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [x] Add format and support for adhoc placeholder sampling {value1|value2}
 - [ ] Make output relative to project folder. Ensure overridden output folder works
 - [x] Make better filenames
-- [ ] Make betterer filenames
-- [ ] Make Hires setting work (cause generations and appear in filename)
-- [ ] Add relevant values to generations output
+- [x] Make betterer filenames
+- [x] Make Hires setting work (cause generations and appear in filename)
+- [x] Add relevant values to generations output
 - [ ] Support multi-prompting
-- [ ] Add more placeholders
+- [x] Add more placeholders
 - [ ] Add Generation Summary
 - [ ] Add Option to delete images in project, or after generation
 - [ ] Add Option to remove or read EXIF information
@@ -186,15 +190,18 @@ This project is licensed under the TODO: specify license. See the [LICENSE](LICE
 - [ ] Add debug mode and transition some outputs of verbose to use that
 - [ ] Switch outputs away from console.log for more control
 - [ ] Shuffle Clause Feature
-
+- [ ] Review placeholders, remove unused features from Wiz
+- [ ] Review placeholders, test more values for general model compliance
+- [ ] Review placeholders: what is a general approach to accumulating?
 
 ### Code - Tech Debt
-- [ ] Push to github 
+- [x] Push to github 
 - [x] Why does config command not show Base Prompt?
 - [x] Add verbose mode that enables better understanding of the code
 - [x] Rename, reorganise static_configuration and dynamic_configuration
 - [ ] Remove unused preview case statement  
-- [ ] Investigate adding tests
+- [ ] Implement unit tests
+- [ ] Decided on consistent commenting approach
 - [x] Check method signatures for simplification
 - [ ] Ask chatgpt for refactor  
 
