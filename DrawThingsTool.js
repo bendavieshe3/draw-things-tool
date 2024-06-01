@@ -2,11 +2,9 @@
 
 const { Command } = require('commander');
 const program = new Command();
-const path = require('path');
 const generate = require('./lib/commands/generate');
 const configCommand = require('./lib/commands/config');
 const configManager = require('./lib/configManager');
-const utils = require('./lib/utils'); // Import the new utility functions
 const pkg = require('./package.json');
 
 program
