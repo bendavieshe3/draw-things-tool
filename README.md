@@ -25,10 +25,10 @@ DrawThingsTools is a command-line interface (CLI) tool for generating images usi
 ### Steps
 
 1. Clone the repository:
-   ```sh
+   ````sh
   git clone https://github.com/username/DrawThingsTools.git
   cd DrawThingsTools
-   ```
+   ````
 
 2. Install dependencies:
    ```sh
@@ -122,6 +122,22 @@ Project Root Folder
 ```
 
 ### Running Tests
+
+I use eslint to find issues in my javascript.
+
+To install:
+
+```sh
+npm install eslint --save-dev
+npx eslint --init
+```
+
+To run: 
+
+```sh
+npx eslint .
+```
+
 
 TODO: Describe how to run tests if any.
 
