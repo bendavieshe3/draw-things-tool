@@ -25,10 +25,10 @@ DrawThingsTools is a command-line interface (CLI) tool for generating images usi
 ### Steps
 
 1. Clone the repository:
-   ````sh
+   ```sh
   git clone https://github.com/username/DrawThingsTools.git
   cd DrawThingsTools
-   ````
+   ```
 
 2. Install dependencies:
    ```sh
